@@ -14,27 +14,7 @@
   --header: hsl(0 0% 65%);
   --lit-header: hsl(0 0% 100%);
   --speed: 2s;
-  --ease: linear(
-    0 0%,
-    0.0036 9.62%,
-    0.0185 16.66%,
-    0.0489 23.03%,
-    0.0962 28.86%,
-    0.1705 34.93%,
-    0.269 40.66%,
-    0.3867 45.89%,
-    0.5833 52.95%,
-    0.683 57.05%,
-    0.7829 62.14%,
-    0.8621 67.46%,
-    0.8991 70.68%,
-    0.9299 74.03%,
-    0.9545 77.52%,
-    0.9735 81.21%,
-    0.9865 85%,
-    0.9949 89.15%,
-    1 100%
-  );
+  --ease: linear;
   color-scheme: dark only;
 }
 
@@ -60,6 +40,7 @@ h1 {
   -webkit-background-clip: text;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 h1 span {
@@ -69,6 +50,16 @@ h1 span {
   color: var(--shadow);
   filter: blur(1.5vmin);
   transform: scale(1.05) translate3d(0, 12%, -10vmin);
+  animation: shadow-move var(--speed) var(--ease) infinite alternate;
+}
+
+@keyframes shadow-move {
+  0% {
+    transform: scale(1.05) translate3d(-10%, 12%, -10vmin);
+  }
+  100% {
+    transform: scale(1.05) translate3d(10%, 12%, -10vmin);
+  }
 }
 
 .cloak {
@@ -117,10 +108,18 @@ h1 span {
   align-self: center;
 }
 
+.jey-link img {
+  width: 120px;
+  height: auto;
+}
+
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: clamp(3rem, 8vw, 6rem);
     letter-spacing: 0.5rem;
+  }
+  .jey-link img {
+    width: 100px; /* Reduce logo size */
   }
   .info {
     width: 95%;
@@ -132,7 +131,27 @@ h1 span {
     font-size: clamp(2.5rem, 6vw, 4rem);
     letter-spacing: 0.3rem;
   }
+  .jey-link img {
+    width: 80px; /* Further reduce logo size */
+  }
   .info {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: clamp(3rem, 8vw, 6rem); /* Increase title size */
+    letter-spacing: 0.5rem;
+  }
+  .jey-link img {
+    width: 70px; /* Further reduce logo size */
+  }
+  .info {
+    width: 100%;
+    font-size: 1.6rem; /* Increase text size */
+  }
+  .follow {
+    padding: 1rem 5rem; /* Increase button size */
   }
 }
