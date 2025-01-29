@@ -80,6 +80,16 @@ h1 span {
     transparent,
     hsl(0 0% 2% / 0.94) 38vmax
   );
+  animation: cloak-anim var(--speed) var(--ease) infinite;
+}
+
+@keyframes cloak-anim {
+  0%, 100% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
 }
 
 .cloak__wrapper {
@@ -125,52 +135,52 @@ h1 span {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: clamp(4rem, 12vw, 10rem);
-    letter-spacing: 0.8rem;
+    font-size: clamp(5rem, 16vw, 14rem);
+    letter-spacing: 1rem;
   }
   .jey-link img {
-    width: 60px;
+    width: 90px;
   }
   .info {
     width: 95%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .follow {
-    padding: 0.9rem 4rem;
+    padding: 1.1rem 5.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: clamp(3.5rem, 10vw, 8rem);
-    letter-spacing: 0.5rem;
+    font-size: clamp(4.5rem, 14vw, 12rem);
+    letter-spacing: 0.8rem;
   }
   .jey-link img {
-    width: 50px;
+    width: 80px;
   }
   .info {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .follow {
-    padding: 0.85rem 3.5rem;
+    padding: 1rem 5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
-    letter-spacing: 0.4rem;
+    font-size: clamp(4rem, 12vw, 10rem);
+    letter-spacing: 0.6rem;
   }
   .jey-link img {
-    width: 40px;
+    width: 70px;
   }
   .info {
     width: 100%;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 1.2rem;
+    font-size: 1.1rem;
   }
   .follow {
-    padding: 0.75rem 3rem;
+    padding: 0.9rem 4.5rem;
   }
 }
