@@ -9,12 +9,32 @@
 }
 
 :root {
-  --shadow: hsl(0 0% 0% / 0.8);
-  --bg: hsl(0 0% 10%);
-  --header: hsl(0 0% 95%);
+  --shadow: hsl(0 0% 0% / 0.9);
+  --bg: hsl(0 0% 70%);
+  --header: hsl(0 0% 65%);
   --lit-header: hsl(0 0% 100%);
-  --speed: 4s; /* Increased speed for slower animation */
-  --ease: linear;
+  --speed: 2s;
+  --ease: linear(
+    0 0%,
+    0.0036 9.62%,
+    0.0185 16.66%,
+    0.0489 23.03%,
+    0.0962 28.86%,
+    0.1705 34.93%,
+    0.269 40.66%,
+    0.3867 45.89%,
+    0.5833 52.95%,
+    0.683 57.05%,
+    0.7829 62.14%,
+    0.8621 67.46%,
+    0.8991 70.68%,
+    0.9299 74.03%,
+    0.9545 77.52%,
+    0.9735 81.21%,
+    0.9865 85%,
+    0.9949 89.15%,
+    1 100%
+  );
   color-scheme: dark only;
 }
 
@@ -32,15 +52,14 @@ body {
 }
 
 h1 {
-  font-size: clamp(8rem, 25vw, 18rem); /* Increased font size */
+  font-size: clamp(4rem, 10vw, 10rem);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  letter-spacing: 1.5rem; /* Increased letter spacing */
+  letter-spacing: 1rem;
   background: radial-gradient(var(--lit-header), var(--header) 45%) center;
   -webkit-background-clip: text;
   color: white;
   text-align: center;
-  position: relative;
 }
 
 h1 span {
@@ -61,16 +80,6 @@ h1 span {
     transparent,
     hsl(0 0% 2% / 0.94) 38vmax
   );
-  animation: cloak-anim var(--speed) var(--ease) infinite;
-}
-
-@keyframes cloak-anim {
-  0%, 100% {
-    transform: translate3d(-50%, -50%, 0); 
-  }
-  50% {
-    transform: translate3d(50%, -50%, 0); 
-  }
 }
 
 .cloak__wrapper {
@@ -96,23 +105,18 @@ h1 span {
   max-width: 44ch;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  font-size: 1.2rem; /* Reduced font size */
+  gap: 1rem;
 }
 
 .follow {
   border-radius: 6px;
   border: 1px solid currentColor;
-  padding: 0.8rem 3rem; /* Reduced padding */
+  padding: 0.75rem 4rem;
   text-decoration: none;
   color: currentColor;
   align-self: center;
 }
 
-.jey-link img {
-  width: 120px;
-  height: auto;
-}
 
 @media only screen and (max-width: 1024px) {
   h1 {
