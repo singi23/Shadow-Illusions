@@ -109,7 +109,7 @@ h1 span {
 }
 
 .jey-link img {
-  width: 120px;
+  width: 60px;
   height: auto;
 }
 
@@ -119,7 +119,7 @@ h1 span {
     letter-spacing: 0.5rem;
   }
   .jey-link img {
-    width: 100px; /* Reduce logo size */
+    width: 40px; /* Reduce logo size */
   }
   .info {
     width: 95%;
@@ -132,7 +132,7 @@ h1 span {
     letter-spacing: 0.3rem;
   }
   .jey-link img {
-    width: 80px; /* Further reduce logo size */
+    width: 60px; /* Further reduce logo size */
   }
   .info {
     width: 100%;
@@ -145,7 +145,7 @@ h1 span {
     letter-spacing: 0.5rem;
   }
   .jey-link img {
-    width: 70px; /* Further reduce logo size */
+    width: 60px; /* Further reduce logo size */
   }
   .info {
     width: 100%;
