@@ -85,10 +85,10 @@ h1 span {
 
 @keyframes cloak-anim {
   0%, 100% {
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(1, 0, 0, 0deg);
   }
   50% {
-    transform: rotate3d(1, 1, 0, 360deg);
+    transform: rotate3d(1, 0, 0, 180deg);
   }
 }
 
@@ -169,18 +169,18 @@ h1 span {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: clamp(4rem, 12vw, 10rem);
-    letter-spacing: 0.6rem;
+    font-size: clamp(4rem, 16vw, 14rem);
+    letter-spacing: 1rem;
   }
   .jey-link img {
-    width: 70px;
+    width: 100px;
   }
   .info {
     width: 100%;
-    padding: 1.2rem;
-    font-size: 1.1rem;
+    padding: 1.5rem;
+    font-size: 1.3rem;
   }
   .follow {
-    padding: 0.9rem 4.5rem;
+    padding: 1.2rem 5.5rem;
   }
 }
