@@ -52,7 +52,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(5rem, 14vw, 12rem);
+  font-size: clamp(6rem, 20vw, 14rem);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   letter-spacing: 1.2rem;
@@ -85,10 +85,10 @@ h1 span {
 
 @keyframes cloak-anim {
   0%, 100% {
-    transform: rotate3d(1, 0, 0, 0deg);
+    transform: translate3d(-10%, -10%, 0);
   }
   50% {
-    transform: rotate3d(1, 0, 0, 180deg);
+    transform: translate3d(10%, -10%, 0);
   }
 }
 
@@ -116,7 +116,7 @@ h1 span {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .follow {
@@ -129,21 +129,21 @@ h1 span {
 }
 
 .jey-link img {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: clamp(5rem, 16vw, 14rem);
+    font-size: clamp(5rem, 18vw, 12rem);
     letter-spacing: 1rem;
   }
   .jey-link img {
-    width: 90px;
+    width: 100px;
   }
   .info {
     width: 95%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .follow {
     padding: 1.1rem 5.5rem;
@@ -152,15 +152,15 @@ h1 span {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: clamp(4.5rem, 14vw, 12rem);
-    letter-spacing: 0.8rem;
+    font-size: clamp(5rem, 16vw, 10rem);
+    letter-spacing: 1rem;
   }
   .jey-link img {
-    width: 80px;
+    width: 90px;
   }
   .info {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .follow {
     padding: 1rem 5rem;
@@ -169,16 +169,16 @@ h1 span {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: clamp(4rem, 16vw, 14rem);
+    font-size: clamp(4rem, 16vw, 8rem);
     letter-spacing: 1rem;
   }
   .jey-link img {
-    width: 100px;
+    width: 80px;
   }
   .info {
     width: 100%;
     padding: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .follow {
     padding: 1.2rem 5.5rem;
