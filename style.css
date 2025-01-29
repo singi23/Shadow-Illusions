@@ -109,17 +109,17 @@ h1 span {
 }
 
 .jey-link img {
-  width: 60px;
+  width: 100px;
   height: auto;
 }
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-size: clamp(6rem, 10vw, 8rem);
     letter-spacing: 0.5rem;
   }
   .jey-link img {
-    width: 40px; /* Reduce logo size */
+    width: 60px; /* Reduce logo size */
   }
   .info {
     width: 95%;
@@ -128,11 +128,11 @@ h1 span {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(4rem, 8vw, 6rem);
     letter-spacing: 0.3rem;
   }
   .jey-link img {
-    width: 60px; /* Further reduce logo size */
+    width: 50px; /* Further reduce logo size */
   }
   .info {
     width: 100%;
@@ -141,11 +141,11 @@ h1 span {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: clamp(3rem, 8vw, 6rem); /* Increase title size */
+    font-size: clamp(5rem, 9vw, 7rem); /* Increase title size */
     letter-spacing: 0.5rem;
   }
   .jey-link img {
-    width: 60px; /* Further reduce logo size */
+    width: 40px; /* Further reduce logo size */
   }
   .info {
     width: 100%;
