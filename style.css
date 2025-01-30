@@ -128,7 +128,7 @@ h1 span {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: clamp(8rem, 12vw, 10rem);
+    font-size: clamp(10rem, 14vw, 12rem);
     letter-spacing: 0.3rem;
   }
   .jey-link img {
@@ -141,7 +141,7 @@ h1 span {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: clamp(6rem, 10vw, 8rem); /* Increase title size */
+    font-size: clamp(8rem, 12vw, 10rem); /* Increase title size */
     letter-spacing: 0.5rem;
   }
   .jey-link img {
@@ -149,9 +149,9 @@ h1 span {
   }
   .info {
     width: 100%;
-    font-size: 2rem; /* Increase text size */
+    font-size: 6rem; /* Increase text size */
   }
   .follow {
-    padding: 2rem 5rem; /* Increase button size */
+    padding: 4rem 7rem; /* Increase button size */
   }
 }
