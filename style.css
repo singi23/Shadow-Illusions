@@ -115,11 +115,11 @@ h1 span {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: clamp(6rem, 10vw, 8rem);
+    font-size: clamp(8rem, 12vw, 10rem);
     letter-spacing: 0.5rem;
   }
   .jey-link img {
-    width: 80px; /* Reduce logo size */
+    width: 90px; /* Reduce logo size */
   }
   .info {
     width: 95%;
@@ -128,7 +128,7 @@ h1 span {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: clamp(6rem, 10vw, 8rem);
+    font-size: clamp(8rem, 12vw, 10rem);
     letter-spacing: 0.3rem;
   }
   .jey-link img {
